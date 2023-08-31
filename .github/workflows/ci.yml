@@ -18,7 +18,7 @@ jobs:
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: /home/runner/work/jacoco-java/jacoco-java/site/jacoco/jacoco.xml
+          files: /home/runner/work/jacoco-java/jacoco-java/target/site/jacoco/jacoco.xml
       - name: See coverage
         run: |
           cd /home/runner/work/jacoco-java/jacoco-java/target/site/jacoco
